@@ -1,0 +1,76 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+@apply bg-[#141414];
+font-family: 'MyCustomFont', sans-serif;
+}
+
+@font-face{
+  font-family: 'MyCustomFont';
+  src: url('./assets/fonts/NetflixSans-Regular.otf');
+}
+
+.swiper{
+  @apply pl-[40px]
+}
+
+.skeleton-loader {
+  width: 220px;
+  height: 127px;
+  background-color: #f0f0f0; /* Gray background color */
+  border-radius: 4px; /* Rounded corners */
+  animation: loading 4s infinite; /* Loading animation */
+}
+
+@keyframes loading {
+  0% {
+    opacity: 0.1;
+  }
+  25% {
+    opacity: 0.5;
+  }
+  50% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 0.5;
+  }
+}
+
+
+
+
+
+
+.my-custom-swiper{
+  @apply pl-[60px] 
+}
+
+.wrapper{
+  height:180px;
+
+  overflow:hidden;
+}
+.hover-iframe{
+
+  top:100%;
+  transform:translateY(-39.5%);
+ 
+  left:0px;
+  pointer-events:none;
+  width:21.5vw;
+  height:56.25vw;
+}
+
+.player{
+  top:20%;
+  transform:translateY(-22.5%);
+ 
+  left:0px;
+  pointer-events:none;
+  width:100vw;
+  height:100vw;
+}
+
